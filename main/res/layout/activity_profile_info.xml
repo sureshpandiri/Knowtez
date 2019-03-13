@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ProfileInfo">
+
+
+    <RelativeLayout
+        android:padding="30dp"
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/uploadtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textStyle="bold"
+            android:text=" Click on Android to Upload an image"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/profileIMg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/uploadtext"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/buttonstyle2"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/ic_android_black_24dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2"
+        android:padding="20dp"
+        android:layout_below="@id/layout1">
+        <EditText
+            android:id="@+id/username"
+            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+            android:drawablePadding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Name"
+            android:imeOptions="actionNext"
+            android:padding="20dp"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/processbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="50dp"
+            android:outlineAmbientShadowColor="@android:color/white"
+            android:outlineSpotShadowColor="@android:color/white"
+            android:padding="10dp"
+            />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="150dp"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_centerHorizontal="true"
+            android:text="Next"
+            android:background="@drawable/buttonstyle2"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

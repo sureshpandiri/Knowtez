@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".SignUp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:minHeight="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/layoutone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="New Account"
+            android:textColor="@android:color/white"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutone">
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp">
+
+            <EditText
+                android:id="@+id/signupemail"
+                android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+                android:drawablePadding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="@android:color/white"
+                android:textColorHighlight="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/one"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp">
+
+            <EditText
+                android:id="@+id/signuppassword"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:drawablePadding="15dp"
+                android:padding="15dp"
+                android:textColor="@android:color/white"
+                android:textColorHighlight="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/processbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="50dp"
+            android:outlineAmbientShadowColor="@android:color/white"
+            android:outlineSpotShadowColor="@android:color/white"
+
+             />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/two"
+            android:layout_margin="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp">
+
+            <EditText
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:id="@+id/confpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm your password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:drawablePadding="15dp"
+                android:padding="15dp"
+                android:textColor="@android:color/white"
+                android:textColorHighlight="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/three"
+            android:layout_centerHorizontal="true"
+            android:text="SignUp"
+            android:background="@drawable/buttonstyle2"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/newlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout3"
+        android:layout_centerHorizontal="true"
+        android:text="Already have account?Login"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
